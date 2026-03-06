@@ -1,95 +1,443 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="16x16" />
     <title>Frequently Asked Questions | Espionage India Private Detective Agency</title>
-    <meta name="description" content="Get answers to common questions about hiring private detectives in Noida. Learn about investigation process, costs, confidentiality, and services offered by Espionage India.">
+    <meta name="description"
+        content="Get answers to common questions about hiring private detectives in Noida. Learn about investigation process, costs, confidentiality, and services offered by Espionage India.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <style>
-        :root{--primary-red:#ed1a25;--primary-gold:#faae3c;--primary-dark:#1a1a1a;--primary-gradient:linear-gradient(135deg,#ed1a25 0%,#faae3c 100%);--dark-gradient:linear-gradient(135deg,#1a1a1a 0%,#2a2a2a 50%,#1a1a1a 100%);--light-bg:#f8f8f8;}
-        *{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth;}
-        body{font-family:'DM Sans',sans-serif;line-height:1.8;color:#333;overflow-x:hidden;background:#fff;}
-        header{background:rgba(255,255,255,.95);backdrop-filter:blur(20px);padding:1rem 0;position:fixed;width:100%;top:0;z-index:1000;box-shadow:0 4px 30px rgba(0,0,0,.05);border-bottom:1px solid rgba(237,26,37,.1);}
-        nav{max-width:1400px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 2rem;}
-        .logo{font-size:1.8rem;font-weight:700;letter-spacing:-1px;display:flex;align-items:center;gap:.5rem;text-decoration:none;color:var(--primary-dark);}
-        .logo-img{height:45px;width:auto;max-width:200px;transition:transform .3s;}
-        .logo:hover .logo-img{transform:scale(1.05);}
-        .nav-links{display:flex;gap:2.5rem;list-style:none;}
-        .nav-links a{color:var(--primary-dark);text-decoration:none;font-weight:500;transition:all .3s;position:relative;font-size:1rem;}
-        .nav-links a::after{content:'';position:absolute;bottom:-5px;left:0;width:0;height:3px;background:var(--primary-gradient);transition:width .3s;border-radius:10px;}
-        .nav-links a:hover::after,.nav-links a.active::after{width:100%;}
-        .hamburger{display:none;cursor:pointer;flex-direction:column;gap:5px;z-index:1001;}
-        .hamburger .bar{width:28px;height:3px;background-color:var(--primary-dark);border-radius:5px;transition:all .3s ease-in-out;}
-        .mobile-nav{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:2rem;position:fixed;top:0;right:-100%;width:100%;height:100vh;background-color:rgba(255,255,255,.98);backdrop-filter:blur(15px);list-style:none;transition:right .4s ease-in-out;z-index:1000;}
-        .mobile-nav.active{right:0;}
-        .mobile-nav a{font-size:2rem;color:var(--primary-dark);text-decoration:none;font-weight:700;}
-        .hamburger.active .bar:nth-child(1){transform:translateY(8px) rotate(45deg);}
-        .hamburger.active .bar:nth-child(2){opacity:0;}
-        .hamburger.active .bar:nth-child(3){transform:translateY(-8px) rotate(-45deg);}
+        :root {
+            --primary-red: #ed1a25;
+            --primary-gold: #faae3c;
+            --primary-dark: #1a1a1a;
+            --primary-gradient: linear-gradient(135deg, #ed1a25 0%, #faae3c 100%);
+            --dark-gradient: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 50%, #1a1a1a 100%);
+            --light-bg: #f8f8f8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            overflow-x: hidden;
+            background: #fff;
+        }
+
+        header {
+            background: rgba(255, 255, 255, .95);
+            backdrop-filter: blur(20px);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, .05);
+            border-bottom: 1px solid rgba(237, 26, 37, .1);
+        }
+
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: -1px;
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            text-decoration: none;
+            color: var(--primary-dark);
+        }
+
+        .logo-img {
+            height: 45px;
+            width: auto;
+            max-width: 200px;
+            transition: transform .3s;
+        }
+
+        .logo:hover .logo-img {
+            transform: scale(1.05);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--primary-dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all .3s;
+            position: relative;
+            font-size: 1rem;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: var(--primary-gradient);
+            transition: width .3s;
+            border-radius: 10px;
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            width: 100%;
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 5px;
+            z-index: 1001;
+        }
+
+        .hamburger .bar {
+            width: 28px;
+            height: 3px;
+            background-color: var(--primary-dark);
+            border-radius: 5px;
+            transition: all .3s ease-in-out;
+        }
+
+        .mobile-nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(255, 255, 255, .98);
+            backdrop-filter: blur(15px);
+            list-style: none;
+            transition: right .4s ease-in-out;
+            z-index: 1000;
+        }
+
+        .mobile-nav.active {
+            right: 0;
+        }
+
+        .mobile-nav a {
+            font-size: 2rem;
+            color: var(--primary-dark);
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .hamburger.active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+
+        .hamburger.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active .bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
 
         /* --------------  FAQ HERO -------------- */
-        .faq-hero{background:var(--dark-gradient);color:#fff;padding:180px 5% 80px;text-align:center;}
-        .faq-hero h1{font-size:clamp(2.5rem,6vw,4.5rem);margin-bottom:1.5rem;font-weight:800;line-height:1.2;letter-spacing:-2px;max-width:1200px;margin-left:auto;margin-right:auto;}
-        .faq-hero .excerpt{font-size:clamp(1.1rem,2vw,1.3rem);max-width:900px;margin:0 auto;opacity:.9;line-height:1.8;}
-        .gradient-text{background:var(--primary-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+        .faq-hero {
+            background: var(--dark-gradient);
+            color: #fff;
+            padding: 180px 5% 80px;
+            text-align: center;
+        }
+
+        .faq-hero h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            margin-bottom: 1.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            letter-spacing: -2px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .faq-hero .excerpt {
+            font-size: clamp(1.1rem, 2vw, 1.3rem);
+            max-width: 900px;
+            margin: 0 auto;
+            opacity: .9;
+            line-height: 1.8;
+        }
+
+        .gradient-text {
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
 
         /* --------------  ACCORDION FAQ STYLES -------------- */
-        .faq-content{max-width:1220px;margin:0 auto;padding:80px 5%;}
-        .faq-content h2{font-size:clamp(2rem,4vw,2.8rem);margin-top:3rem;margin-bottom:1.5rem;font-weight:800;line-height:1.3;color:var(--primary-dark);}
-        .faq-item{background:linear-gradient(135deg,rgba(237,26,37,.02),rgba(250,174,60,.02));border:1px solid rgba(237,26,37,.1);border-radius:15px;margin-bottom:1.2rem;overflow:hidden;transition:all .3s ease;}
-        .faq-question{width:100%;text-align:left;background:transparent;border:none;font-size:clamp(1.1rem,2.5vw,1.4rem);font-weight:700;color:var(--primary-dark);padding:1.8rem 2.2rem;cursor:pointer;display:flex;align-items:center;gap:1rem;position:relative;}
-        .faq-question i{flex-shrink:0;width:22px;height:22px;transition:transform .3s ease;}
-        .faq-answer{max-height:0;overflow:hidden;padding:0 2.2rem;font-size:clamp(1.05rem,2vw,1.15rem);line-height:1.9;color:#555;transition:max-height .4s ease,padding .4s ease;}
-        .faq-item.open .faq-answer{max-height:600px;padding:0 2.2rem 1.8rem;}
-        .faq-item.open .faq-question i{transform:rotate(180deg);}
-        .divider{width:100px;height:4px;background:var(--primary-gradient);margin:3rem auto;border-radius:10px;}
-        .cta-box{background:var(--primary-gradient);color:#fff;padding:3rem;border-radius:25px;text-align:center;margin:4rem 0;box-shadow:0 15px 50px rgba(237,26,37,.3);}
-        .cta-box h3{font-size:clamp(1.8rem,4vw,2.5rem);margin-bottom:1rem;color:#fff;}
-        .cta-box p{font-size:1.15rem;margin-bottom:2rem;opacity:.95;color:#fff;}
-        .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:1rem 2.5rem;background:#fff;color:var(--primary-dark);text-decoration:none;border-radius:50px;transition:all .3s;font-size:1.1rem;font-weight:600;box-shadow:0 8px 25px rgba(0,0,0,.2);}
-        .btn:hover{transform:translateY(-3px);box-shadow:0 12px 35px rgba(0,0,0,.3);}
+        .faq-content {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 80px 5%;
+        }
+
+        .faq-content h2 {
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            font-weight: 800;
+            line-height: 1.3;
+            color: var(--primary-dark);
+        }
+
+        .faq-item {
+            background: linear-gradient(135deg, rgba(237, 26, 37, .02), rgba(250, 174, 60, .02));
+            border: 1px solid rgba(237, 26, 37, .1);
+            border-radius: 15px;
+            margin-bottom: 1.2rem;
+            overflow: hidden;
+            transition: all .3s ease;
+        }
+
+        .faq-question {
+            width: 100%;
+            text-align: left;
+            background: transparent;
+            border: none;
+            font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+            font-weight: 700;
+            color: var(--primary-dark);
+            padding: 1.8rem 2.2rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            position: relative;
+        }
+
+        .faq-question i {
+            flex-shrink: 0;
+            width: 22px;
+            height: 22px;
+            transition: transform .3s ease;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            padding: 0 2.2rem;
+            font-size: clamp(1.05rem, 2vw, 1.15rem);
+            line-height: 1.9;
+            color: #555;
+            transition: max-height .4s ease, padding .4s ease;
+        }
+
+        .faq-item.open .faq-answer {
+            max-height: 600px;
+            padding: 0 2.2rem 1.8rem;
+        }
+
+        .faq-item.open .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        .divider {
+            width: 100px;
+            height: 4px;
+            background: var(--primary-gradient);
+            margin: 3rem auto;
+            border-radius: 10px;
+        }
+
+        .cta-box {
+            background: var(--primary-gradient);
+            color: #fff;
+            padding: 3rem;
+            border-radius: 25px;
+            text-align: center;
+            margin: 4rem 0;
+            box-shadow: 0 15px 50px rgba(237, 26, 37, .3);
+        }
+
+        .cta-box h3 {
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .cta-box p {
+            font-size: 1.15rem;
+            margin-bottom: 2rem;
+            opacity: .95;
+            color: #fff;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: .5rem;
+            padding: 1rem 2.5rem;
+            background: #fff;
+            color: var(--primary-dark);
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all .3s;
+            font-size: 1.1rem;
+            font-weight: 600;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, .2);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, .3);
+        }
 
         /* --------------  FOOTER STYLES (same as original) -------------- */
-        footer{background:#0d0d0d;color:#aaa;padding:80px 0 30px;}
-        .footer-content{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:3rem;margin-bottom:3rem;max-width:1400px;margin-left:auto;margin-right:auto;padding:0 2rem;}
-        .footer-section h3{margin-bottom:1.5rem;font-size:1.4rem;color:#fff;}
-        .footer-section p,.footer-section a{color:#aaa;text-decoration:none;display:block;margin-bottom:.8rem;transition:color .3s;font-size:1rem;line-height:1.7;}
-        .footer-section a:hover{color:var(--primary-red);}
-        .footer-bottom{text-align:center;padding-top:2rem;border-top:1px solid #2a2a2a;color:#888;font-size:.9rem;max-width:1400px;margin:0 auto;padding:0 2rem;}
-        @media (max-width:1024px){.nav-links{display:none;}.hamburger{display:flex;}}
-        @media (max-width:768px){.faq-hero{padding:140px 5% 60px;}.faq-content{padding:60px 5%;}}
+        footer {
+            background: #0d0d0d;
+            color: #aaa;
+            padding: 80px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+            max-width: 1400px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1.5rem;
+            font-size: 1.4rem;
+            color: #fff;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: #aaa;
+            text-decoration: none;
+            display: block;
+            margin-bottom: .8rem;
+            transition: color .3s;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary-red);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #2a2a2a;
+            color: #888;
+            font-size: .9rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        @media (max-width:1024px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+        }
+
+        @media (max-width:768px) {
+            .faq-hero {
+                padding: 140px 5% 60px;
+            }
+
+            .faq-content {
+                padding: 60px 5%;
+            }
+        }
     </style>
-<base target="_blank">
+    <base target="_blank">
 </head>
+
 <body>
 
-<!-- ============================  HEADER (unchanged)  ============================ -->
-<!--Start of Tawk.to Script-->
-<script>
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5fdb4d46df060f156a8dfabb/1epoabntg';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+    <!-- ============================  HEADER (unchanged)  ============================ -->
+    <!--Start of Tawk.to Script-->
+    <script>
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5fdb4d46df060f156a8dfabb/1epoabntg';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
 
-<header>
-    <nav>
-        <a href="/" class="logo">
-            <img src="assets/images/logo.png" onerror="this.onerror=null;this.src='https://placehold.co/180x45/ed1a25/ffffff?text=Espionage+Logo';" alt="Espionage India Logo" class="logo-img">
-        </a>
-        <ul class="nav-links">
+    <header>
+        <nav>
+            <a href="/" class="logo">
+                <img src="assets/images/logo.png"
+                    onerror="this.onerror=null;this.src='https://placehold.co/180x45/ed1a25/ffffff?text=Espionage+Logo';"
+                    alt="Espionage India Logo" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#team-members-visuals">Team</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#testimonials">Results</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        <ul class="mobile-nav">
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#process">Process</a></li>
@@ -98,246 +446,278 @@ s0.parentNode.insertBefore(s1,s0);
             <li><a href="#testimonials">Results</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-    </nav>
-    <ul class="mobile-nav">
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#process">Process</a></li>
-        <li><a href="#team-members-visuals">Team</a></li>
-        <li><a href="#achievements">Achievements</a></li>
-        <li><a href="#testimonials">Results</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</header>
+    </header>
 
-<!-- ============================  FAQ ACCORDION CONTENT  ============================ -->
-<main>
-    <section class="faq-hero">
-        <h1>Frequently Asked <span class="gradient-text">Questions</span></h1>
-        <p class="excerpt">Get answers to common questions about hiring private detectives in Noida. Learn about investigation process, costs, confidentiality and more.</p>
-    </section>
+    <!-- ============================  FAQ ACCORDION CONTENT  ============================ -->
+    <main>
+        <section class="faq-hero">
+            <h1>Frequently Asked <span class="gradient-text">Questions</span></h1>
+            <p class="excerpt">Get answers to common questions about hiring private detectives in Noida. Learn about
+                investigation process, costs, confidentiality and more.</p>
+        </section>
 
-    <article class="faq-content">
-        <h2>General <span class="gradient-text">Inquiries</span></h2>
+        <article class="faq-content">
+            <h2>General <span class="gradient-text">Inquiries</span></h2>
 
-        <div class="faq-item">
-            <button class="faq-question">
-                <i data-lucide="shield-question"></i>
-                Is hiring a private detective legal in India?
-            </button>
-            <div class="faq-answer">
-                Yes, hiring private investigation services is completely legal in India. However, investigators must operate within the framework of Indian laws. We cannot perform activities that violate privacy laws, trespass on private property without permission, or obtain information through illegal means. All our operations are conducted ethically and legally, ensuring evidence collected is admissible in court.
+            <div class="faq-item">
+                <button class="faq-question">
+                    <i data-lucide="shield-question"></i>
+                    Is hiring a private detective legal in India?
+                </button>
+                <div class="faq-answer">
+                    Yes, hiring private investigation services is completely legal in India. However, investigators must
+                    operate within the framework of Indian laws. We cannot perform activities that violate privacy laws,
+                    trespass on private property without permission, or obtain information through illegal means. All
+                    our operations are conducted ethically and legally, ensuring evidence collected is admissible in
+                    court.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <i data-lucide="clock"></i>
+                    How long does a typical investigation take?
+                </button>
+                <div class="faq-answer">
+                    Investigation duration varies based on case complexity and objectives. Simple background
+                    verification may take 3-5 days, while matrimonial investigations typically require 7-15 days.
+                    Complex corporate fraud cases can extend to several weeks. We provide estimated timelines during
+                    initial consultation and keep you updated throughout the process.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <i data-lucide="dollar-sign"></i>
+                    What are the charges for investigation services?
+                </button>
+                <div class="faq-answer">
+                    Our pricing depends on investigation type, duration, and complexity. Basic surveillance starts from
+                    ₹8,000-12,000 per day, while comprehensive background checks range from ₹15,000-25,000. Matrimonial
+                    investigations typically cost ₹50,000-1,50,000 depending on scope. We provide detailed quotes after
+                    understanding your specific requirements during free consultation.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <i data-lucide="lock"></i>
+                    How do you ensure confidentiality?
+                </button>
+                <div class="faq-answer">
+                    Confidentiality is our top priority. All client information is encrypted and stored securely. Only
+                    assigned investigators have access to case details. We never disclose client identity without
+                    written permission. Our operatives work discreetly without revealing their affiliation. We also sign
+                    Non-Disclosure Agreements (NDAs) for sensitive cases.
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <h2>Matrimonial <span class="gradient-text">Investigation</span> FAQs</h2>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <i data-lucide="heart"></i>
+                    What does pre-matrimonial investigation include?
+                </button>
+                <div class="faq-answer">
+                    Our comprehensive pre-matrimonial investigation covers family background verification, financial
+                    status assessment, employment and education confirmation, character evaluation, social reputation
+                    analysis, past relationship history, health status verification, and property/asset validation. We
+                    also check for any criminal records or hidden liabilities that might affect the marriage.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <i data-lucide="users"></i>
+                    How do you investigate extramarital affairs?
+                </button>
+                <div class="faq-answer">
+                    We employ multiple methods including discreet surveillance, social media monitoring, communication
+                    pattern analysis, and lifestyle assessment. Our investigators document activities through
+                    timestamped photographs and videos while maintaining complete discretion. We provide concrete
+                    evidence of infidelity including meeting locations, frequency, and nature of relationship.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <i data-lucide="file-text"></i>
+                    Will the evidence be legally admissible?
+                </button>
+                <div class="faq-answer">
+                    Absolutely. All evidence is collected following legal procedures ensuring courtroom admissibility.
+                    We maintain proper chain of custody, use legally approved surveillance methods, and document
+                    everything professionally. Our investigators can testify in court if required, and our reports are
+                    recognized by legal authorities.
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+
+
+            <h2>Corporate <span class="gradient-text">Investigation</span> FAQs</h2>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <i data-lucide="building"></i>
+                    What employee verification services do you offer?
+                </button>
+                <div class="faq-answer">
+                    We provide comprehensive employee screening including identity verification, address confirmation,
+                    educational qualification validation, previous employment verification, criminal record checks,
+                    credit history analysis, and reference verification. For senior positions, we also conduct deeper
+                    background analysis including reputation assessment and financial stability evaluation.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <i data-lucide="search"></i>
+                    How do you handle corporate fraud investigations?
+                </button>
+                <div class="faq-answer">
+                    Corporate fraud investigations involve financial audit trail analysis, digital forensics, employee
+                    interviews, document verification, and surveillance if necessary. We identify fraudulent activities,
+                    quantify losses, gather evidence, and prepare detailed reports for legal action. Our team includes
+                    forensic accounting specialists and former law enforcement officers.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <i data-lucide="briefcase"></i>
+                    What is due diligence investigation?
+                </button>
+                <div class="faq-answer">
+                    Due diligence investigation involves comprehensive verification of business entities before
+                    partnerships, mergers, or acquisitions. We examine company registration, financial health, legal
+                    compliance, reputation in market, key personnel background, litigation history, and operational
+                    legitimacy. This helps businesses make informed decisions and avoid potential risks.
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <h2>Process & <span class="gradient-text">Procedure</span> FAQs</h2>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <i data-lucide="phone"></i>
+                    How do I start the investigation process?
+                </button>
+                <div class="faq-answer">
+                    Simply call us at +919315910779 or email espionageindia01@gmail.com for a confidential consultation.
+                    We'll discuss your situation, understand objectives, and suggest appropriate investigation strategy.
+                    After agreement on scope and cost, we require 75% advance payment to begin operations. The process
+                    is completely discreet and professional.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <i data-lucide="map-pin"></i>
+                    Which areas do you cover?
+                </button>
+                <div class="faq-answer">
+                    While headquartered in Noida, we operate throughout Delhi NCR including Delhi, Gurgaon, Faridabad,
+                    Ghaziabad, and Greater Noida. We also handle cases in other major cities through our network of
+                    trusted associates. For outstation assignments, travel expenses are borne by the client as per
+                    actuals.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <i data-lucide="file-check"></i>
+                    What will I receive in the final report?
+                </button>
+                <div class="faq-answer">
+                    Our comprehensive investigation reports include executive summary, detailed findings, timeline of
+                    activities, photographic/video evidence, supporting documents, analysis and conclusions, and
+                    recommendations for next steps. Reports are professionally formatted and can be customized based on
+                    your specific requirements. Digital copies are provided through secure channels.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <i data-lucide="credit-card"></i>
+                    What payment methods do you accept?
+                </button>
+                <div class="faq-answer">
+                    We accept multiple payment methods for your convenience: cash, bank transfers, cheques, and digital
+                    payments (UPI, Paytm, Google Pay). For large assignments, we offer installment options. All payments
+                    are processed through proper banking channels with appropriate receipts provided for transparency.
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+
+            <h2>Still Have <span class="gradient-text">Questions?</span></h2>
+            <p>If you didn't find the answer to your question, we're here to help. Every case is unique, and we
+                understand you might have specific concerns or requirements.</p>
+
+            <div class="cta-box">
+                <h3>Need Personal Consultation?</h3>
+                <p>Contact our expert team for confidential discussion about your specific situation. We're available
+                    24/7 to address your concerns.</p>
+                <a href="index.html#contact" class="btn">Get Free Consultation</a>
+            </div>
+        </article>
+    </main>
+
+    <!-- ============================  FOOTER (unchanged)  ============================ -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="/" class="logo">
+                        <img src="assets/images/logo.png" alt="Espionage India Logo" class="logo-img">
+                    </a>
+                    <p>Leading authority in professional investigation services with over 20 years of excellence.
+                        Distinguished for high standards and comprehensive approach across India.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.html#about">About Us</a>
+                    <a href="index.html#services">Our Services</a>
+                    <a href="index.html#process">Investigation Process</a>
+                    <a href="index.html#contact">Contact Us</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Our Services</h3>
+                    <a href="/private-detective-agency-in-delhi.html">Private Detective Agency in Delhi</a>
+                    <a href="index.html#services">Corporate Investigation</a>
+                    <a href="index.html#services">Matrimonial Investigation</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Information</h3>
+                    <p>📧 Email: espionageindia01@gmail.com</p>
+                    <p>📱 Phone: +919315910779</p>
+                    <p>⏰ Available: 24/7 for consultations</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Espionage Investigations. All rights reserved.</p>
             </div>
         </div>
+    </footer>
 
-        <div class="faq-item">
-            <button class="faq-question">
-                <i data-lucide="clock"></i>
-                How long does a typical investigation take?
-            </button>
-            <div class="faq-answer">
-                Investigation duration varies based on case complexity and objectives. Simple background verification may take 3-5 days, while matrimonial investigations typically require 7-15 days. Complex corporate fraud cases can extend to several weeks. We provide estimated timelines during initial consultation and keep you updated throughout the process.
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <button class="faq-question">
-                <i data-lucide="dollar-sign"></i>
-                What are the charges for investigation services?
-            </button>
-            <div class="faq-answer">
-                Our pricing depends on investigation type, duration, and complexity. Basic surveillance starts from ₹8,000-12,000 per day, while comprehensive background checks range from ₹15,000-25,000. Matrimonial investigations typically cost ₹50,000-1,50,000 depending on scope. We provide detailed quotes after understanding your specific requirements during free consultation.
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <button class="faq-question">
-                <i data-lucide="lock"></i>
-                How do you ensure confidentiality?
-            </button>
-            <div class="faq-answer">
-                Confidentiality is our top priority. All client information is encrypted and stored securely. Only assigned investigators have access to case details. We never disclose client identity without written permission. Our operatives work discreetly without revealing their affiliation. We also sign Non-Disclosure Agreements (NDAs) for sensitive cases.
-            </div>
-        </div>
-
-        <div class="divider"></div>
-
-        <h2>Matrimonial <span class="gradient-text">Investigation</span> FAQs</h2>
-
-    <div class="faq-item">
-        <button class="faq-question">
-            <i data-lucide="heart"></i>
-            What does pre-matrimonial investigation include?
-        </button>
-        <div class="faq-answer">
-            Our comprehensive pre-matrimonial investigation covers family background verification, financial status assessment, employment and education confirmation, character evaluation, social reputation analysis, past relationship history, health status verification, and property/asset validation. We also check for any criminal records or hidden liabilities that might affect the marriage.
-        </div>
-    </div>
-
-    <div class="faq-item">
-        <button class="faq-question">
-            <i data-lucide="users"></i>
-            How do you investigate extramarital affairs?
-        </button>
-        <div class="faq-answer">
-            We employ multiple methods including discreet surveillance, social media monitoring, communication pattern analysis, and lifestyle assessment. Our investigators document activities through timestamped photographs and videos while maintaining complete discretion. We provide concrete evidence of infidelity including meeting locations, frequency, and nature of relationship.
-        </div>
-    </div>
-
-    <div class="faq-item">
-        <button class="faq-question">
-            <i data-lucide="file-text"></i>
-            Will the evidence be legally admissible?
-        </button>
-        <div class="faq-answer">
-            Absolutely. All evidence is collected following legal procedures ensuring courtroom admissibility. We maintain proper chain of custody, use legally approved surveillance methods, and document everything professionally. Our investigators can testify in court if required, and our reports are recognized by legal authorities.
-        </div>
-    </div>
-
-    <div class="divider"></div>
-
-
-        
-        <h2>Corporate <span class="gradient-text">Investigation</span> FAQs</h2>
-
-    <div class="faq-item">
-        <button class="faq-question">
-            <i data-lucide="building"></i>
-            What employee verification services do you offer?
-        </button>
-        <div class="faq-answer">
-            We provide comprehensive employee screening including identity verification, address confirmation, educational qualification validation, previous employment verification, criminal record checks, credit history analysis, and reference verification. For senior positions, we also conduct deeper background analysis including reputation assessment and financial stability evaluation.
-        </div>
-    </div>
-
-    <div class="faq-item">
-        <button class="faq-question">
-            <i data-lucide="search"></i>
-            How do you handle corporate fraud investigations?
-        </button>
-        <div class="faq-answer">
-            Corporate fraud investigations involve financial audit trail analysis, digital forensics, employee interviews, document verification, and surveillance if necessary. We identify fraudulent activities, quantify losses, gather evidence, and prepare detailed reports for legal action. Our team includes forensic accounting specialists and former law enforcement officers.
-        </div>
-    </div>
-
-    <div class="faq-item">
-        <button class="faq-question">
-            <i data-lucide="briefcase"></i>
-            What is due diligence investigation?
-        </button>
-        <div class="faq-answer">
-            Due diligence investigation involves comprehensive verification of business entities before partnerships, mergers, or acquisitions. We examine company registration, financial health, legal compliance, reputation in market, key personnel background, litigation history, and operational legitimacy. This helps businesses make informed decisions and avoid potential risks.
-        </div>
-    </div>
-
-    <div class="divider"></div>
-    
-    <h2>Process & <span class="gradient-text">Procedure</span> FAQs</h2>
-
-    <div class="faq-item">
-        <button class="faq-question">
-            <i data-lucide="phone"></i>
-            How do I start the investigation process?
-        </button>
-        <div class="faq-answer">
-            Simply call us at +919315910779 or email espionageindia01@gmail.com for a confidential consultation. We'll discuss your situation, understand objectives, and suggest appropriate investigation strategy. After agreement on scope and cost, we require 75% advance payment to begin operations. The process is completely discreet and professional.
-        </div>
-    </div>
-
-    <div class="faq-item">
-        <button class="faq-question">
-            <i data-lucide="map-pin"></i>
-            Which areas do you cover?
-        </button>
-        <div class="faq-answer">
-            While headquartered in Noida, we operate throughout Delhi NCR including Delhi, Gurgaon, Faridabad, Ghaziabad, and Greater Noida. We also handle cases in other major cities through our network of trusted associates. For outstation assignments, travel expenses are borne by the client as per actuals.
-        </div>
-    </div>
-
-    <div class="faq-item">
-        <button class="faq-question">
-            <i data-lucide="file-check"></i>
-            What will I receive in the final report?
-        </button>
-        <div class="faq-answer">
-            Our comprehensive investigation reports include executive summary, detailed findings, timeline of activities, photographic/video evidence, supporting documents, analysis and conclusions, and recommendations for next steps. Reports are professionally formatted and can be customized based on your specific requirements. Digital copies are provided through secure channels.
-        </div>
-    </div>
-
-    <div class="faq-item">
-        <button class="faq-question">
-            <i data-lucide="credit-card"></i>
-            What payment methods do you accept?
-        </button>
-        <div class="faq-answer">
-            We accept multiple payment methods for your convenience: cash, bank transfers, cheques, and digital payments (UPI, Paytm, Google Pay). For large assignments, we offer installment options. All payments are processed through proper banking channels with appropriate receipts provided for transparency.
-        </div>
-    </div>
-
-    <div class="divider"></div>
-    
-
-        <h2>Still Have <span class="gradient-text">Questions?</span></h2>
-        <p>If you didn't find the answer to your question, we're here to help. Every case is unique, and we understand you might have specific concerns or requirements.</p>
-
-        <div class="cta-box">
-            <h3>Need Personal Consultation?</h3>
-            <p>Contact our expert team for confidential discussion about your specific situation. We're available 24/7 to address your concerns.</p>
-            <a href="index.html#contact" class="btn">Get Free Consultation</a>
-        </div>
-    </article>
-</main>
-
-<!-- ============================  FOOTER (unchanged)  ============================ -->
-<footer>
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-section">
-                <a href="/" class="logo">
-                    <img src="assets/images/logo.png" alt="Espionage India Logo" class="logo-img">
-                </a>
-                <p>Leading authority in professional investigation services with over 20 years of excellence. Distinguished for high standards and comprehensive approach across India.</p>
-            </div>
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <a href="index.html#about">About Us</a>
-                <a href="index.html#services">Our Services</a>
-                <a href="index.html#process">Investigation Process</a>
-                <a href="index.html#contact">Contact Us</a>
-            </div>
-            <div class="footer-section">
-                <h3>Our Services</h3>
-                <a href="/private-detective-agency-in-delhi.html">Private Detective Agency in Delhi</a>
-                <a href="index.html#services">Corporate Investigation</a>
-                <a href="index.html#services">Matrimonial Investigation</a>
-            </div>
-            <div class="footer-section">
-                <h3>Contact Information</h3>
-                <p>📧 Email: espionageindia01@gmail.com</p>
-                <p>📱 Phone: +919315910779</p>
-                <p>⏰ Available: 24/7 for consultations</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Espionage Investigations. All rights reserved.</p>
-        </div>
-    </div>
-</footer>
-
-<!-- ============================  SCRIPTS  ============================ -->
-<script>
-/* mobile nav */
-const hamburger=document.querySelector('.hamburger'),mobileNav=document.querySelector('.mobile-nav');
-hamburger.addEventListener('click',()=>{mobileNav.classList.toggle('active');hamburger.classList.toggle('active');});
-document.querySelectorAll('.mobile-nav a').forEach(link=>link.addEventListener('click',()=>{mobileNav.classList.remove('active');hamburger.classList.remove('active');}));
-/* accordion */
-document.querySelectorAll('.faq-question').forEach(btn=>btn.addEventListener('click',()=>btn.parentElement.classList.toggle('open')));
-lucide.createIcons();
-</script>
+    <!-- ============================  SCRIPTS  ============================ -->
+    <script>
+        /* mobile nav */
+        const hamburger = document.querySelector('.hamburger'), mobileNav = document.querySelector('.mobile-nav');
+        hamburger.addEventListener('click', () => { mobileNav.classList.toggle('active'); hamburger.classList.toggle('active'); });
+        document.querySelectorAll('.mobile-nav a').forEach(link => link.addEventListener('click', () => { mobileNav.classList.remove('active'); hamburger.classList.remove('active'); }));
+        /* accordion */
+        document.querySelectorAll('.faq-question').forEach(btn => btn.addEventListener('click', () => btn.parentElement.classList.toggle('open')));
+        lucide.createIcons();
+    </script>
 </body>
+
 </html>
